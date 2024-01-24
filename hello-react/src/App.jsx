@@ -1,11 +1,40 @@
 import { useState } from 'react'
+import TaskCard from './TaskCard'
 
 
 function App() {
- 
+
   return (
     <>
-     
+      <div className='flex justify-center'>
+
+        <div className=" m-5 w-5/6 self-center ">
+
+          <h1 className="font-bold text-2xl">Smarter Tasks</h1>
+          <h1 className=" text-xl">Project: Graduation Final Year Project (Revamp College Website)</h1>
+
+          <div className='m-5 flex'>
+
+            <div className='w-1/2 border-2 mx-2'>
+              <h2 className='p-5 font-bold text-xl '>Pending</h2>
+              <TaskCard title="Build website with static content" dueDate="10th April" assigneeName="Rohit S" />
+              <TaskCard title="Add a Blog" dueDate="22nd March" assigneeName="Rohit M" />
+              <h3 className=" w-11/12 m-2 p-1 border " ><i class='bx bx-plus'></i> New task</h3>
+            </div>
+
+            <div className='w-1/2 border-2 mx-2'>
+              <h2 className='p-5 font-bold text-xl '>Completed</h2>
+              <TaskCard  title="Design the mockup" completedAtDate="10th April" assigneeName="Rohit M" />
+              <TaskCard title="Add a Blog" completedAtDate="20th April" assigneeName="Ajay S" />
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
     </>
   )
 }
