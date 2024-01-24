@@ -23,7 +23,7 @@ function App() {
             </div>
 
             <div className='w-1/2 border-2 mx-2'>
-              <h2 className='p-5 font-bold text-xl '>Completed</h2>
+              <h2 className='p-5 font-bold text-xl '>Done</h2>
               <TaskCard  title="Design the mockup" completedAtDate="10th April" assigneeName="Rohit M" />
               <TaskCard title="Add a Blog" completedAtDate="20th April" assigneeName="Ajay S" />
 

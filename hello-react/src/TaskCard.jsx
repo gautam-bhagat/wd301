@@ -2,6 +2,7 @@ import React from 'react'
 import './TaskCard.css' 
 
 const TaskCard = (props) => {
+    // eslint-disable-next-line react/prop-types
     const { dueDate,completedAtDate, title, assigneeName } = props
     const displayDate = completedAtDate  ? `Completed on: ${completedAtDate}` : `Due on: ${dueDate}`
   
