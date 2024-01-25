@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import TaskCard from './TaskCard'
-
+import React from 'react'
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
               <h2 className='p-5 font-bold text-xl '>Pending</h2>
               <TaskCard title="Build website with static content" dueDate="10th April" assigneeName="Rohit S" />
               <TaskCard title="Add a Blog" dueDate="22nd March" assigneeName="Rohit M" />
-              <h3 className=" w-11/12 m-2 p-1 border " ><i class='bx bx-plus'></i> New task</h3>
+              <h3 className=" w-11/12 m-2 p-1 border " ><i className='bx bx-plus'></i> New task</h3>
             </div>
 
             <div className='w-1/2 border-2 mx-2'>
