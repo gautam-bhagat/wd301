@@ -26,7 +26,7 @@ export default class TaskForm extends Component<TaskFormProps, TaskFormState> {
     this.props.addTask(newTask);
     this.setState({ title: "" });
   };
-  handleChange : React.ChangeEventHandler<HTMLFormElement> = (e) =>{
+  handleChange : React.ChangeEventHandler<HTMLInputElement> = (e) =>{
     e.preventDefault();
     const {name,value} =  e.target;
     this.setState({...this.state, [name] : value})
