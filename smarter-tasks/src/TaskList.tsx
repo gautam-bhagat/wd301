@@ -14,7 +14,7 @@ export default class TaskList extends Component<Props, State> {
     return (
       <>
         {this.props.tasks.map((item, id) => {
-          return <Task key={id} title={item.title} />;
+          return <Task key={id} task={item} />;
         })}
       </>
     );

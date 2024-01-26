@@ -40,8 +40,8 @@ export default class TaskApp extends Component<TaskAppProp, TaskAppState> {
             <h1 className="text-slate-500 text-xl font-bold text-center mb-2">
               Pending
             </h1>
-            <TaskForm  addTask={this.addTask} />
             <TaskList tasks={this.state.tasks} />
+            <TaskForm  addTask={this.addTask} />
           </div><div className="border border-slate-200 rounded-xl p-4">
             <h1 className="text-slate-500 text-xl font-bold text-center mb-2">
               Done
