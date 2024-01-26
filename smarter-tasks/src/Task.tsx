@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import "./TaskCard.css";
 
 interface TaskProp  {
@@ -7,16 +7,16 @@ interface TaskProp  {
     dueDate :string,}
 }
 
-export default class Task extends Component <TaskProp>{
-
-
-  render() {
-    return (
-      <div className="TaskItem shadow-md border border-slate-100">
-        <h3 className="text-base font-bold my-1">{this.props.task.title} ( {(this.props.task.dueDate)} )</h3>
-        {this.props.task.description}
-        
-      </div>
-    )
-  }
+function Task(props: TaskProp) {
+  return (
+    <div className="TaskItem shadow-md border border-slate-100">
+      <h2 className="text-base font-bold my-1">{props.task.title}</h2>
+      <p className="text-sm text-slate-500">{props.task.dueDate}</p>
+      <p className="text-sm text-slate-500">
+        Description: {props.task.description}
+      </p>
+    </div>
+  );
 }
+
+export default Task
