@@ -27,6 +27,9 @@ const TaskApp = () => {
 
 
   const addTask = (task: TaskItem) => {
+
+    task['id'] = taskAppState.tasks.length
+    console.log(task)
     setTaskAppState({ tasks: [...taskAppState.tasks, task] });
   };
 
@@ -37,7 +40,7 @@ const TaskApp = () => {
   };
 
   return (
-    <div className="container py-10 max-w-4xl mx-auto">
+    <div className="container py-10 w-5/6 mx-auto">
       <h1 className="text-3xl mb-2 font-bold text-slate-700">
         Smarter Tasks
       </h1>
