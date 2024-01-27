@@ -2,6 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
  
 }
+
+.dark {
+  @apply bg-slate-800 text-zinc-50;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
