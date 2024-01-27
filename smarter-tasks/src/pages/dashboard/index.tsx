@@ -20,7 +20,7 @@ const Dashboard: React.FC = () => {
         <div className=" w-1/2 px-6 py-8 bg-white flex flex-col justify-center rounded-lg shadow-md">
           <p>Name : {userData.name}</p>
           <p>Email : {userData.email}</p>
-          <a id="logout-link" href="/" className="w-1/2 bg-gray-700 text-center hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-gray mt-4 mx-auto">Logout
+          <a id="logout-link" href="/signin" className="w-1/2 bg-gray-700 text-center hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-gray mt-4 mx-auto">Logout
           </a>
         </div>
       </div>
